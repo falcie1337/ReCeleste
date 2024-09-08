@@ -1,9 +1,7 @@
 function love.load()
-    Class = require 'lib/classic'
+	Class = require("lib/classic")
 end
 
-function love.update(dt)
-end
+function love.update(dt) end
 
-function love.draw()
-end
+function love.draw() end
