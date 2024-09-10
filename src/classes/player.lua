@@ -19,9 +19,17 @@ function Player:update(dt)
    self.xSpd = self.xSpd + self.accel * dt
    self.ySpd = self.ySpd + self.gravity * dt
 
-   if love.keyboard.isDown("w") and self.onGround then
+   -- basic movement (will be rewritten soon, just placeholder code)
+   if love.keyboard('w') and self.onGround then
       self.ySpd = -self.jumpForce
       self.onGround = false
+   end
+
+   if love.keyboard('a') then
+      self.xSpd = self.xSpd - self.accel
+   elseif
+      love.keyboard('d') then
+      self.xSpd = self.xSpd + self.accel
    end
 end
 
