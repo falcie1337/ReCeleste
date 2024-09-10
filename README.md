@@ -1,2 +1,2 @@
 # ReCeleste
-Reimplementing Celeste in Love2D for technical learning purposes
+(Trying) to reimplement Celeste in Love2D for technical learning purposes
