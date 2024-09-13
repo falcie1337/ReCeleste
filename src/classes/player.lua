@@ -1,11 +1,11 @@
 local Player = Class({})
 
-function Player.init(self, x, y, world)
+function Player:init(x, y, world)
 	self.x = x
 	self.y = y
 	self.world = world
-	self.width = 16
-	self.height = 16
+	self.w = 8
+	self.h = 8
 
 	self.dx = 0
 	self.dy = 0
@@ -21,3 +21,9 @@ function Player.init(self, x, y, world)
 
 	self.world:add(self, self.x, self.y, self.width, self.height)
 end
+
+function Player:update(dt) end
+
+function Player:draw() end
+
+return Player
