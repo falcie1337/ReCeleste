@@ -1,5 +1,5 @@
 local bump = require("libs.bump")
-local Player = require("src.classes.player")
+local Player = require("src.player")
 
 local level = {}
 
