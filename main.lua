@@ -1,7 +1,5 @@
 function love.load()
-	Class = require("libs.hump.class")
-	Bump = require("libs.bump")
-	Baton = require("libs.baton")
+	require("levels.level1")
 end
 
 function love.update(dt) end
