@@ -51,6 +51,7 @@ function Player:update(dt)
 	self.x = self.x + self.vx * dt
 	self.y = self.y + self.vy * dt
 
+	self:playerFilter(Tile)
 	self:movePlayer()
 
 	if not self.onGround then

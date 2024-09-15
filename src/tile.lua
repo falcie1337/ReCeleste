@@ -1,7 +1,7 @@
 local class = require("libs.hump.class")
-Solid = class({})
+Tile = class({})
 
-function Solid:init(world, x, y)
+function Tile:init(world, x, y)
 	self.x = x
 	self.y = y
 	self.w = 8
@@ -10,6 +10,6 @@ function Solid:init(world, x, y)
 	world:add(self, self.x, self.y, self.w, self.h)
 end
 
-function Solid:draw()
+function Tile:draw()
 	love.graphics.rectangle("line", self.x, self.y, self.w, self.h)
 end
